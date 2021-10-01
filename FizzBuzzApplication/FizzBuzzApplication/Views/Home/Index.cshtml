@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <h2>Welcome to Fizz Buzz Application</h2>
+        </div>
+    </div>
+
+    <div>
+        <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+            <table>
+                <tr>
+                    <td>Enter comma separated numbers: </td>
+                    <td><input type="text" id="txtnumber" style="margin:5px" name="Numbers" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" style="margin:5px" value="Submit" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+

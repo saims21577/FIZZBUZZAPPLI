@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ModelData>
+
+@{
+    ViewBag.Title = "Results";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th> Input </th>
+            <th> Result </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td> @item.Number</td>
+                <td> @item.Result</td>
+            </tr>
+        }
+    </tbody>
+</table>
